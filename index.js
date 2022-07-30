@@ -1,5 +1,7 @@
-const animationDuration = 4000 + 500
 const root = document.getElementById('root')
+const input=  document.getElementById('fake-press')
+
+const animationDuration = 4000 + 500
 const randomLeft = ()=> Math.random() * 80 + 10
 const rotate = ()=> {
     const neg = Math.random() * 2 > 1 ? -1 : 1  
@@ -24,4 +26,6 @@ document.addEventListener('keyup',function(event){
     setTimeout(() => removeFromDom(span), animationDuration);
 })
 
-
+document.addEventListener('click',function(){
+    input.click()
+})
