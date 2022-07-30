@@ -27,5 +27,6 @@ document.addEventListener('keyup',function(event){
 })
 
 document.addEventListener('click',function(){
-    input.click()
+    console.log('click')
+    input.focus()
 })
